@@ -3,6 +3,7 @@ package com.karlin.user.common.flows
 import com.karlin.user.common.viewmodel.DataState
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
@@ -12,6 +13,7 @@ fun <T> MutableDataStateFlow() = MutableStateFlow<DataState<T>>(DataState.loadin
 
 inline fun <T> Flow<T>.collectIn(scope: CoroutineScope, crossinline action: suspend (T) -> Unit) {
     scope.launch {
+        val sharedFlow = MutableSharedFlow<String>()
         this@collectIn.collect(action)
     }
 }

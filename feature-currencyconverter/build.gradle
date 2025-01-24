@@ -7,6 +7,7 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
+        namespace = "com.karlin.user.feature_currencyconverter"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
@@ -24,11 +25,11 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility 1.8
-        targetCompatibility 1.8
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '21'
     }
 }
 

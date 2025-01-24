@@ -12,7 +12,7 @@ ext {
 
   //Third party libraries
   coroutinesVersion = '1.4.2'
-  daggerVersion = '2.29.1'
+  daggerVersion = '2.55'
   flowBindingVersion = '1.0.0-beta02'
   javaxAnnotationsVersion = '1.0'
   javaxInjectVersion = '1'
@@ -22,17 +22,17 @@ ext {
   retrofit2Version = "2.9.0"
   retrofit2ConverterGsonVersion = "2.7.1"
   retrofit2AdapterVersion = "2.9.0"
-  roomVersion = "2.2.6"
+  roomVersion = "2.6.1"
   rxjavaVersion = "2.2.19"
   rxAndroidVersion = "2.1.1"
-  moshiVersion = "1.10.0"
+  moshiVersion = "1.15.2"
   timberVersion = "4.7.1"
 
   //Unit Testing
   junitVersion = '1.2.2'
   junitExtVersion = '1.2.2'
-  mockitoVersion = '3.0.0'
-  kotlinMockitoVersion = '1.5.0'
+  mockitoVersion = '5.15.2'
+  kotlinMockitoVersion = '2.0.0'
   mockkVersion = '1.10.0'
 
   //Acceptance Testing
